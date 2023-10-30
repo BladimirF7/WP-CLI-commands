@@ -1,0 +1,2 @@
+## You can remove the "&& mv wp-config.php wp-config.php.bkold" and/or add --skip-plugins --skip-themes where needed before each && if there is a 500 error, etc. 
+wp site empty && wp plugin delete --all && wp core update && wp theme install twentytwentytwo && wp theme activate twentytwentytwo && wp theme delete --all && wp db reset --skip-plugins --skip-themes && mv wp-config.php wp-config.php.bkold
